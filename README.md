@@ -33,11 +33,11 @@ At this stage, holds are **manually specified**, and the system outputs a **text
 
 ```
 Manual Hold Input
-      ↓
+      
 Graph Construction
-      ↓
+      
 Constraint-Based Path Planning
-      ↓
+      
 Textual Beta Generation
 ```
 
@@ -73,7 +73,7 @@ A valid move must satisfy:
 * Euclidean distance ≤ max reach
 * Positive height progression (generally upward)
 
-The planner searches for a path from a designated **start hold** to a **finish hold** using a graph search algorithm (BFS or A*).
+The planner searches for a path from a designated **start hold** to a **finish hold** using a graph search algorithm (A*).
 
 ---
 
@@ -88,17 +88,6 @@ Example:
 2. Move your right hand up to the next crimp.
 3. Bring your feet up and reach for the finish.
 ```
-
-This approach prioritizes interpretability and debuggability over language model generation.
-
----
-
-## Why This MVP Matters
-
-* Establishes the **core reasoning logic** of the system
-* Enables testing and iteration without ML noise
-* Creates a clear baseline for future evaluation
-* Ensures later ML components solve the *right problem*
 
 ---
 
@@ -129,4 +118,4 @@ This approach prioritizes interpretability and debuggability over language model
 
 ## Status
 
-🚧 MVP in progress — planning logic under development.
+MVP in progress — planning logic under development.
